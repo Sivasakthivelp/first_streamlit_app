@@ -1,3 +1,3 @@
 # created the main python file
-
-print("Sivasakthivel")
+import streamlit
+streamlit.title("Sivasakthivel")
