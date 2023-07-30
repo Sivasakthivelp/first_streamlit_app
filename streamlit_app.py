@@ -4,9 +4,9 @@ import requests
 
 @streamlit.experimental_memo(ttl=600)
 def run_query(query):
-with conn.cursor() as cur:
-cur.execute(query)
-return cur.fetchall()
+ with conn.cursor() as cur:
+ cur.execute(query)
+ return cur.fetchall()
 
 
 
