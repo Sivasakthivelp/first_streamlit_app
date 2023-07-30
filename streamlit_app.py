@@ -3,6 +3,13 @@ import pandas
 import requests
 import snowflake.connector
 
+@st.experimental_singleton
+def init_connection():
+ return snowflake.connector.connect(
+**st.secrets[“snowflake”], client_session_keep_alive=True
+)
+conn = init_connection()
+
 
 
 
