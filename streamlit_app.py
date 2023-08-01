@@ -47,7 +47,7 @@ except URLError as e:
 #output it the screen as a table 
 
 
-streamlit.stop()
+#streamlit.stop()
 
 streamlit.header("The fruit load list contains:")
 
